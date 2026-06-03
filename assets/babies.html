@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Babies Collection - Trendy Clothing</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo fade-up">
+        <h2>TC</h2>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="leggings.html">Leggings</a></li>
+        <li><a href="index.html#tshirts">T-Shirts</a></li>
+        <li><a href="babies.html" class="active">Babies Sets</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+      </ul>
+
+      <button class="order-btn fade-up">Order Now</button>
+
+      <button class="menu-icon" id="menuIcon" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- BABIES COLLECTION -->
+  <section class="products-collection">
+    <h1 class="collection-title">Babies Collection</h1>
+
+    <div class="collection-grid">
+      <div class="collection-item" data-category="babies" data-name="Cozy Romper" data-description="Soft and gentle for tiny skin." data-price="$16.99">
+        <img src="babies set/ba 1.jpg" alt="Cozy Romper">
+        <div class="item-overlay">
+          <h3>Cozy Romper</h3>
+          <p>$16.99</p>
+        </div>
+      </div>
+
+      <div class="collection-item" data-category="babies" data-name="Two-Piece Set" data-description="Playful prints in premium fabrics." data-price="$25.99">
+        <img src="babies set/ba 2.webp" alt="Two-Piece Set">
+        <div class="item-overlay">
+          <h3>Two-Piece Set</h3>
+          <p>$25.99</p>
+        </div>
+      </div>
+
+      <div class="collection-item" data-category="babies" data-name="Dreamy Sleepsuit" data-description="Perfect bedtime comfort for babies." data-price="$21.99">
+        <img src="babies set/ba 3.jpg" alt="Dreamy Sleepsuit">
+        <div class="item-overlay">
+          <h3>Dreamy Sleepsuit</h3>
+          <p>$21.99</p>
+        </div>
+      </div>
+
+      <div class="collection-item" data-category="babies" data-name="Floral Play Set" data-description="Cute and breathable for all-day play." data-price="$19.99">
+        <img src="babies set/ba 4.jpg" alt="Floral Play Set">
+        <div class="item-overlay">
+          <h3>Floral Play Set</h3>
+          <p>$19.99</p>
+        </div>
+      </div>
+
+      <div class="collection-item" data-category="babies" data-name="Sweet Sleepsuit" data-description="Comfy sleepwear for peaceful nights." data-price="$18.99">
+        <img src="babies set/ba 5.jpg" alt="Sweet Sleepsuit">
+        <div class="item-overlay">
+          <h3>Sweet Sleepsuit</h3>
+          <p>$18.99</p>
+        </div>
+      </div>
+
+      <div class="collection-item" data-category="babies" data-name="Cute Set" data-description="Stylish set designed for delicate skin." data-price="$22.99">
+        <img src="babies set/ba 6.jpg" alt="Cute Set">
+        <div class="item-overlay">
+          <h3>Cute Set</h3>
+          <p>$22.99</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT DETAILS MODAL -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal product-close">&times;</span>
+      <div class="product-details">
+        <img id="modalImage" src="" alt="Product Image">
+        <div class="product-info">
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+          <p id="modalPrice" class="price"></p>
+          <button id="addToCartBtn" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Trendy Clothing. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

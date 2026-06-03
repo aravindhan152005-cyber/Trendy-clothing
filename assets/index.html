@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trendy Clothing</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo fade-up">
+        <h2>TC</h2>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="leggings.html">Leggings</a></li>
+        <li><a href="#tshirts">T-Shirts</a></li>
+        <li><a href="babies.html">Babies Sets</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+      </ul>
+
+      <button class="order-btn fade-up">Order Now</button>
+
+      <button class="menu-icon" id="menuIcon" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+
+    <div class="hero-content fade-up">
+      <div class="hero-badge">New <span>Collection</span></div>
+      <h1>
+        Better digital <br>
+        experience with <br>
+        Trendy Clothing
+      </h1>
+
+      <p>
+        We are a team of talented designers creating beautiful fashion collections.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="start-btn">Get Started</button>
+        <button class="video-btn">Watch Video</button>
+      </div>
+    </div>
+
+
+    <div class="hero-image fade-up">
+      <img
+        src="imgs/Tc hero.png "
+        alt="Hero Image"
+      />
+    </div>
+
+  </section>
+
+  <!-- VIDEO MODAL -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content video-modal-content">
+      <span class="close-modal video-close">&times;</span>
+      <video id="heroVideo" controls>
+        <source src="video/fasion%20v.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+
+  <!-- LEGGINGS SECTION -->
+  <section class="products fade-up" id="leggings">
+    <h2>Women's Collection</h2>
+
+    <div class="product-container">
+
+      <div class="card">
+        <img src="imgs/leg 1.png" alt="Leggings">
+        <h3>Black Leggings</h3>
+        <p>Comfortable and stylish leggings.</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="card">
+        <img src="imgs/gym wear.png" alt="Gym wear">
+        <h3>Gym Wear</h3>
+        <p>Perfect outfit for workouts.</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="card">
+        <img src="imgs/trendy.jpg" alt="Trendy Wear">
+        <h3>Trendy Style</h3>
+        <p>Latest fashion collection.</p>
+        <button>Buy Now</button>
+      </div>
+
+    </div>
+  </section>
+  
+
+
+  <!-- T-SHIRTS SECTION -->
+  <section class="products fade-up" id="tshirts">
+    <h2>T-Shirts & Tops</h2>
+
+    <div class="product-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop" alt="t-shirt">
+        <h3>Graphic Tee</h3>
+        <p>Bold prints for everyday style.</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop" alt="t-shirt">
+        <h3>Cotton Comfort</h3>
+        <p>Soft, breathable everyday staple.</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?q=80&w=800&auto=format&fit=crop" alt="t-shirt">
+        <h3>Classic Crew</h3>
+        <p>Minimal design with a premium fit.</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BABIES SECTION -->
+  <section class="products fade-up" id="babies">
+    <h2>Babies Sets</h2>
+
+    <div class="product-container">
+      <div class="card">
+        <img src="babies set/ba 1.jpg" alt="baby set">
+        <h3>Cozy Romper</h3>
+        <p>Soft and gentle for tiny skin.</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="card">
+        <img src="babies set/ba 2.webp" alt="baby set">
+        <h3>Two-Piece Set</h3>
+        <p>Playful prints in premium fabrics.</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="card">
+        <img src="babies set/ba 3.jpg" alt="baby set">
+        <h3>Dreamy Sleepsuit</h3>
+        <p>Perfect bedtime comfort for babies.</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT SECTION -->
+  <section class="contact fade-up" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form>
+      <input type="text" placeholder="Enter your name">
+        <input type="number" placeholder="Enter your phone number">
+      <input type="email" placeholder="Enter your email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+ 
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Trendy Clothing. All Rights Reserved.</p>
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
+ 

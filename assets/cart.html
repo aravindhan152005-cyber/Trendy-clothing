@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart - Trendy Clothing</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo fade-up">
+        <h2>TC</h2>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="leggings.html">Leggings</a></li>
+        <li><a href="index.html#tshirts">T-Shirts</a></li>
+        <li><a href="babies.html">Babies Sets</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="cart.html" class="active">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+      </ul>
+
+      <button class="order-btn fade-up">Order Now</button>
+
+      <button class="menu-icon" id="menuIcon" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <section class="cart-section">
+    <div class="cart-wrapper fade-up">
+      <h1>Your Shopping Cart</h1>
+      <div class="cart-empty">Your cart is empty. Add items from the collection page.</div>
+      <div class="cart-items"></div>
+      <div class="cart-summary">
+        <p>Total: <span id="cartTotal">$0.00</span></p>
+        <button id="checkoutBtn" class="order-btn">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Trendy Clothing. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

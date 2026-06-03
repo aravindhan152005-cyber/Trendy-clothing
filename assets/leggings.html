@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leggings Collection - Trendy Clothing</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo fade-up">
+        <h2>TC</h2>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="leggings.html" class="active">Leggings</a></li>
+        <li><a href="index.html#tshirts">T-Shirts</a></li>
+        <li><a href="babies.html">Babies Sets</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+      </ul>
+
+      <button class="order-btn fade-up">Order Now</button>
+
+      <button class="menu-icon" id="menuIcon" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- LEGGINGS COLLECTION -->
+  <section class="products-collection">
+    <h1 class="collection-title">Leggings Collection</h1>
+
+    <div class="collection-grid">
+      <!-- Leggings 1 -->
+      <div class="collection-item" data-category="leggings" data-name="Black Leggings" data-description="Comfortable and stylish leggings." data-price="$29.99">
+        <img src="legs img/legs 1.png" alt="Black Leggings">
+        <div class="item-overlay">
+          <h3>Black Leggings</h3>
+          <p>$29.99</p>
+        </div>
+      </div>
+
+      <!-- Leggings 2 -->
+      <div class="collection-item" data-category="leggings" data-name="Classic Leggings" data-description="Perfect outfit for workouts." data-price="$34.99">
+        <img src="legs img/legs 2.jpg" alt="Classic Leggings">
+        <div class="item-overlay">
+          <h3>Classic Leggings</h3>
+          <p>$34.99</p>
+        </div>
+      </div>
+
+      <!-- Leggings 3 -->
+      <div class="collection-item" data-category="leggings" data-name="Maternity Leggings" data-description="Latest fashion collection." data-price="$39.99">
+        <img src="legs img/legs 3.webp" alt="Maternity Leggings">
+        <div class="item-overlay">
+          <h3>Maternity Leggings</h3>
+          <p>$39.99</p>
+        </div>
+      </div>
+
+      <!-- Leggings 4 -->
+      <div class="collection-item" data-category="leggings" data-name="High-Waisted Leggings" data-description="Premium quality leggings." data-price="$34.99">
+        <img src="legs img/legs 4.webp" alt="High-Waisted Leggings">
+        <div class="item-overlay">
+          <h3>High-Waisted Leggings</h3>
+          <p>$34.99</p>
+        </div>
+      </div>
+
+      <!-- Leggings 5 -->
+      <div class="collection-item" data-category="leggings" data-name="Premium Leggings" data-description="Premium quality leggings." data-price="$44.99">
+        <img src="legs img/legs 5.webp" alt="Premium Leggings">
+        <div class="item-overlay">
+          <h3>Premium Leggings</h3>
+          <p>$44.99</p>
+        </div>
+      </div>
+
+      <!-- Leggings 6 -->
+      <div class="collection-item" data-category="leggings" data-name="Yoga Leggings" data-description="Advanced athletic wear." data-price="$49.99">
+        <img src="legs img/legs 6.webp" alt="Yoga Leggings">
+        <div class="item-overlay">
+          <h3>Yoga Leggings</h3>
+          <p>$49.99</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT DETAILS MODAL -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal product-close">&times;</span>
+      <div class="product-details">
+        <img id="modalImage" src="" alt="Product Image">
+        <div class="product-info">
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+          <p id="modalPrice" class="price"></p>
+          <button id="addToCartBtn" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Trendy Clothing. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

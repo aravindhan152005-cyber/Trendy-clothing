@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Collection - Trendy Clothing</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo fade-up">
+        <h2>TC</h2>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="leggings.html">Leggings</a></li>
+        <li><a href="index.html#tshirts">T-Shirts</a></li>
+        <li><a href="babies.html">Babies Sets</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+      </ul>
+
+      <button class="order-btn fade-up">Order Now</button>
+
+      <button class="menu-icon" id="menuIcon" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- PRODUCTS COLLECTION -->
+  <section class="products-collection">
+    <h1 class="collection-title">Our Collection</h1>
+
+    <div class="collection-grid">
+      <!-- Leggings -->
+      <div class="collection-item" data-category="leggings" data-name="Black Leggings" data-description="Comfortable and stylish leggings." data-price="$29.99">
+        <img src="imgs/leg 1.png" alt="Black Leggings">
+        <div class="item-overlay">
+          <h3>Black Leggings</h3>
+          <p>$29.99</p>
+        </div>
+      </div>
+
+      <div class="collection-item" data-category="leggings" data-name="Gym Wear" data-description="Perfect outfit for workouts." data-price="$34.99">
+        <img src="imgs/gym wear.png" alt="Gym Wear">
+        <div class="item-overlay">
+          <h3>Gym Wear</h3>
+          <p>$34.99</p>
+        </div>
+      </div>
+
+      <div class="collection-item" data-category="leggings" data-name="Trendy Style" data-description="Latest fashion collection." data-price="$39.99">
+        <img src="imgs/trendy.jpg" alt="Trendy Wear">
+        <div class="item-overlay">
+          <h3>Trendy Style</h3>
+          <p>$39.99</p>
+        </div>
+      </div>
+
+      <!-- T-Shirts -->
+      <div class="collection-item" data-category="tshirts" data-name="Graphic Tee" data-description="Bold prints for everyday style." data-price="$24.99">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop" alt="Graphic Tee">
+        <div class="item-overlay">
+          <h3>Graphic Tee</h3>
+          <p>$24.99</p>
+        </div>
+      </div>
+
+      <div class="collection-item" data-category="tshirts" data-name="Cotton Comfort" data-description="Soft, breathable everyday staple." data-price="$19.99">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format&fit=crop" alt="Cotton Comfort">
+        <div class="item-overlay">
+          <h3>Cotton Comfort</h3>
+          <p>$19.99</p>
+        </div>
+      </div>
+
+      <div class="collection-item" data-category="tshirts" data-name="Classic Crew" data-description="Minimal design with a premium fit." data-price="$22.99">
+        <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?q=80&w=800&auto=format&fit=crop" alt="Classic Crew">
+        <div class="item-overlay">
+          <h3>Classic Crew</h3>
+          <p>$22.99</p>
+        </div>
+      </div>
+
+      <!-- Babies -->
+      <div class="collection-item" data-category="babies" data-name="Cozy Romper" data-description="Soft and gentle for tiny skin." data-price="$16.99">
+        <img src="babies set/ba 1.jpg" alt="Cozy Romper">
+        <div class="item-overlay">
+          <h3>Cozy Romper</h3>
+          <p>$16.99</p>
+        </div>
+      </div>
+
+      <div class="collection-item" data-category="babies" data-name="Two-Piece Set" data-description="Playful prints in premium fabrics." data-price="$25.99">
+        <img src="babies set/ba 2.webp" alt="Two-Piece Set">
+        <div class="item-overlay">
+          <h3>Two-Piece Set</h3>
+          <p>$25.99</p>
+        </div>
+      </div>
+
+      <div class="collection-item" data-category="babies" data-name="Dreamy Sleepsuit" data-description="Perfect bedtime comfort for babies." data-price="$21.99">
+        <img src="babies set/ba 3.jpg" alt="Dreamy Sleepsuit">
+        <div class="item-overlay">
+          <h3>Dreamy Sleepsuit</h3>
+          <p>$21.99</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT DETAILS MODAL -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal product-close">&times;</span>
+      <div class="product-details">
+        <img id="modalImage" src="" alt="Product Image">
+        <div class="product-info">
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+          <p id="modalPrice" class="price"></p>
+          <button id="addToCartBtn" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Trendy Clothing. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
